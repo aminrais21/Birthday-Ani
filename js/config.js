@@ -72,22 +72,22 @@ const CONFIG = {
     {
       year: 2023,
       caption: "Ulang tahun pertama : Surprise di Kontrakan, inget gaaa kamu bete karena aku lama lamain di jalan",
-      photos: ["photo1.jpeg", "photo2.jpeg"]
+      photos: ["Photo1.jpeg", "Photo2.jpeg"]
     },
     {
       year: 2024,
       caption: "Tahun kedua, kita jam 00.01 di embun senja terus malamnya aku bawain kamu bunga di kost emerald hihi",
-      photos: ["photo3.jpeg", "photo4.jpeg"]
+      photos: ["Photo3.jpeg", "Photo4.jpeg"]
     },
     {
       year: 2025,
       caption: "Tahun ketiga, kita jalunn jalunnn ke dofunn.",
-      photos: ["photo5.jpeg", "photo6.jpeg"]
+      photos: ["Photo5.jpeg", "Photo6.jpeg"]
     },
     {
       year: 2026,
       caption: "Tahun ini, nanti kita isi fotonyaaa dengan jalan jalan seru lagi yaaaa sayang",
-      photos: ["photo1.jpg", "photo2.jpg"]
+      photos: ["Photo1.jpg", "Photo2.jpg"]
     }
   ],
 
