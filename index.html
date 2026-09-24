@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Spesial untuk Ani🩷</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩷</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Dekorasi lengkung awan lembut di background -->
+  <div class="bg-decor" aria-hidden="true">
+    <span class="petal p1">🌸</span>
+    <span class="petal p2">🌸</span>
+    <span class="petal p3">🌸</span>
+    <span class="petal p4">🌸</span>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <p class="hero-eyebrow" id="hero-date"></p>
+    <h1 class="hero-title">
+      <span id="hero-title-line">Selamat Ulang Tahun,</span><br />
+      <span class="hero-name" id="hero-name">Sayang</span>
+    </h1>
+    <p class="hero-subtitle" id="hero-subtitle">Satu lagi tahun penuh cerita yang aku syukuri bareng kamu.</p>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>gulir ke bawah</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ============ KARTU UCAPAN ============ -->
+  <section class="section card-section" id="card-section">
+    <p class="section-eyebrow">Kartu Ucapan</p>
+    <h2 class="section-title">Ada surat kecil buat kamu</h2>
+
+    <div class="envelope-wrap">
+      <button class="envelope" id="envelope-btn" aria-haspopup="dialog" aria-controls="gate-modal">
+        <span class="envelope-flap"></span>
+        <span class="envelope-body">
+          <span class="envelope-seal">💌</span>
+        </span>
+        <span class="envelope-label">Ketuk untuk membuka</span>
+      </button>
+    </div>
+
+    <!-- Isi kartu, tersembunyi sampai pertanyaan gerbang terjawab benar -->
+    <article class="letter-card hidden" id="letter-card">
+      <p class="letter-heading" id="letter-heading">Untukmu,</p>
+      <div class="letter-message" id="letter-message"></div>
+      <p class="letter-signature" id="letter-signature">— Aku</p>
+    </article>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section class="section timeline-section" id="timeline-section">
+    <p class="section-eyebrow">Perjalanan Kita</p>
+    <h2 class="section-title">Ulang tahun yang pernah kita rayakan</h2>
+
+    <div class="garland" id="garland">
+      <!-- diisi otomatis oleh script.js -->
+    </div>
+
+    <div class="gallery-wrap hidden" id="gallery-wrap">
+      <p class="gallery-caption" id="gallery-caption"></p>
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>dibuat dengan 🩷 khusus untukmu</p>
+  </footer>
+
+  <!-- ============ MODAL: PERTANYAAN GERBANG ============ -->
+  <div class="modal-overlay hidden" id="gate-modal" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="modal-box">
+      <button class="modal-close" id="gate-close" aria-label="Tutup">✕</button>
+      <p class="modal-eyebrow" id="gate-progress">Sebelum surat ini terbuka...</p>
+      <h3 class="modal-title" id="gate-title" >Jawab dulu, ya</h3>
+      <p class="modal-question" id="gate-question"></p>
+      <form id="gate-form">
+        <input type="text" id="gate-input" class="modal-input" autocomplete="off" placeholder="Jawaban kamu..." />
+        <p class="modal-hint" id="gate-hint"></p>
+        <p class="modal-error hidden" id="gate-error"></p>
+        <button type="submit" class="modal-submit">Buka Kartu</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============ MUSIK LATAR ============ -->
+  <div class="music-player" id="music-player">
+    <audio id="bg-audio" loop preload="none"></audio>
+    <button class="music-toggle" id="music-toggle" aria-label="Putar musik">
+      <span class="music-icon" id="music-icon">♪</span>
+    </button>
+    <span class="music-title" id="music-title"></span>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Taruh foto ulang tahun tahun ini di sini. Contoh nama file: photo1.jpg, photo2.jpg (sesuaikan dengan js/config.js)
